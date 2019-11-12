@@ -6,18 +6,33 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.16",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sass": "^2.1.14",
+    "gatsby-plugin-sharp": "^2.2.24",
+    "gatsby-plugin-styled-components": "^3.1.6",
+    "gatsby-remark-images": "^3.1.22",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-contentful": "^2.1.38",
+    "gatsby-source-filesystem": "^2.1.23",
+    "gatsby-transformer-remark": "^2.6.22",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "prettier": "^1.18.2"
   },
   "repository": {
